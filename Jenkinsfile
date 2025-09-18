@@ -7,7 +7,6 @@ pipeline{
 				git branch : 'master', url : 'https://github.com/Agasthyahm/calendar.git'
 			}
 		}
-		stage('Deploy into both server'){
 				stage('deploy to server1'){
 				agent { label 'slave' }
 					steps{
