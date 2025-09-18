@@ -4,7 +4,7 @@ pipeline{
 		stage('Build'){
 		agent { label 'slave' }
 			steps{
-				git branch : 'master', url : 'https://github.com/Agasthyahm/calendar.git'
+				git branch : 'master', url : 'https://github.com/Amith373/Calendar.git'
 			}
 		}
 				stage('deploy to server1'){
