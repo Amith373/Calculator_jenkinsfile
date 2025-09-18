@@ -18,7 +18,7 @@ pipeline{
 					}
 				}
 		stage('Test'){
-		agent { label 'master' }
+		agent { label 'slave' }
 			steps{
 				sh ''' 
 						echo -e "\n Testing for server1"
