@@ -18,15 +18,14 @@ pipeline{
 					'''
 					}
 				}
-		}
 		stage('Test'){
 		agent { label 'master' }
 			steps{
 				sh ''' 
 						echo -e "\n Testing for server1"
 						curl -Is http://98.88.249.239:8080/Calendar/Calendar.html
- '''
+                   '''
 			}
 		}
 	}
-}
+}	
